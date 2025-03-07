@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selene import Browser, Config
 
-from homework_11.utils import attach
+from utils import attach
 
 
 @pytest.fixture(scope='function')
@@ -24,7 +24,7 @@ def setup_browser(request):
         options=options
     )
 
-    browser = Browser(Config(driver))
+    browser = Browser(Config(driver=driver))
     yield browser
 
     attach.add_screenshot(browser)

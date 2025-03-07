@@ -3,6 +3,7 @@
 
 
 info.md
+tests/test_registration_form.py
 
 ### Python template
 # Byte-compiled / optimized / DLL files
