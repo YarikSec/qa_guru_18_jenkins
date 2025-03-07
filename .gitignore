@@ -3,7 +3,6 @@
 
 
 info.md
-tests/test_registration_form.py
 
 ### Python template
 # Byte-compiled / optimized / DLL files
@@ -144,3 +143,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# PyCharm helpers
+/tests/allure-results/
