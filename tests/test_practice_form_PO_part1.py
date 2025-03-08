@@ -13,8 +13,9 @@ from pages.practice_form_page import PracticeFormPage
 @allure.feature("Задание по jenkins")
 @allure.story("Проверяем заполнение формы на сайте")
 @allure.link("https://github.com", name="Testing")
-def test_practice_form():
-    practice_form = PracticeFormPage()
+def test_practice_form(setup_browser):
+    browser = setup_browser
+    practice_form = PracticeFormPage(browser)
     
     # WHEN
     with allure.step('Заполняем форму'):
